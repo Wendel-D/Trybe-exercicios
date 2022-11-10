@@ -2,4 +2,4 @@
 
 simbolo para copiar: ||
 
-// teste
+CHECK THE BRANCH TO SEE ALL THE EXERCICES
