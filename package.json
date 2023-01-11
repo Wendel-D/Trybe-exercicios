@@ -1,19 +1,23 @@
 {
-  "name": "trybe-exercicios",
+  "name": "my-scripts",
   "version": "1.0.0",
   "description": "simbolo para copiar: ||",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bmi": "node bmi.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Wendel-D/Trybe-exercicios.git"
   },
-  "author": "wendel",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Wendel-D/Trybe-exercicios/issues"
   },
-  "homepage": "https://github.com/Wendel-D/Trybe-exercicios#readme"
+  "homepage": "https://github.com/Wendel-D/Trybe-exercicios#readme",
+  "dependencies": {
+    "readline-sync": "1.4"
+  }
 }
