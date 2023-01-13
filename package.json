@@ -1,0 +1,27 @@
+{
+  "name": "trybe-exercicios",
+  "version": "1.0.0",
+  "description": "simbolo para copiar: ||",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wendel-D/Trybe-exercicios.git"
+  },
+  "author": "wendel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wendel-D/Trybe-exercicios/issues"
+  },
+  "homepage": "https://github.com/Wendel-D/Trybe-exercicios#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
