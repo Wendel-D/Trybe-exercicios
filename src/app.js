@@ -1,4 +1,5 @@
 const express = require('express');
+const moviesData = require('../data/movies.json')
 
 const app = express();
 
