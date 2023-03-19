@@ -28,14 +28,42 @@ class Estudantes {
     this._trabPortugues = trabPortugues;
   }
 
-  get matricula() { return this._matrícula }
-  get nome() { return this._nome }
-  get notaMatematica() { return this._notaMatematica }
-  get notaPortugues() { return this._notaPortugues }
-  get notaGeografia() { return this._notaGeografia }
-  get notaIngles() { return this._notaIngles }
-  get trabMatematica() { return this._trabMatematica }
-  get trabPortugues() { return this._trabPortugues }
+  get matricula() {
+    console.log(this._matrícula);
+    return this._matrícula
+  }
+  get nome() {
+    console.log(this._nome);
+    return this._nome
+  }
+  get notaMatematica() {
+    console.log(this._notaMatematica);
+
+    return this._notaMatematica
+  }
+  get notaPortugues() {
+    console.log(this._notaPortugues);
+
+    return this._notaPortugues
+  }
+  get notaGeografia() {
+    console.log(this._notaGeografia);
+
+    return this._notaGeografia
+  }
+  get notaIngles() {
+
+    console.log(this._notaIngles);
+    return this._notaIngles
+  }
+  get trabMatematica() {
+    console.log(this._trabMatematica);
+    return this._trabMatematica
+  }
+  get trabPortugues() {
+    console.log(this._trabPortugues);
+    return this._trabPortugues
+  }
 
 
   set matricula(matricula: number) {
@@ -65,12 +93,20 @@ class Estudantes {
 
   sum() {
     const soma = this._notaGeografia + this._notaIngles + this._notaMatematica + this._notaPortugues + this._trabMatematica + this._trabPortugues;
-    return soma;
+    console.log(soma);
   }
 
   avg() {
     const soma = this._notaGeografia + this._notaIngles + this._notaMatematica + this._notaPortugues + this._trabMatematica + this._trabPortugues;
-    return (soma / 6)
+    console.log(soma / 6);
   }
 
 }
+
+const wendel = new Estudantes(1, 'Wendel', 10, 9, 3, 4, 5, 10);
+
+wendel.avg()
+wendel.sum()
+wendel.matricula
+wendel.nome
+wendel.notaMatematica
