@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Estudantes = void 0;
 class Estudantes {
     constructor(matricula, nome, notaMatematica, notaPortugues, notaGeografia, notaIngles, trabMatematica, trabPortugues) {
         this._matrícula = matricula;
@@ -75,9 +77,4 @@ class Estudantes {
         console.log(soma / 6);
     }
 }
-const wendel = new Estudantes(1, 'Wendel', 10, 9, 3, 4, 5, 10);
-wendel.avg();
-wendel.sum();
-wendel.matricula;
-wendel.nome;
-wendel.notaMatematica;
+exports.Estudantes = Estudantes;
