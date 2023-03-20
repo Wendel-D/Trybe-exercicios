@@ -17,7 +17,7 @@ class Cliente {
 
 class Pedido {
     private _cliente: Cliente;
-    private _consumidos: Item[];
+    private _consumidos: Item[] = [];
     private _pagamento: string;
     private _desconto = 0;
 
@@ -55,6 +55,18 @@ class Pedido {
     }
     set desconto(desconto: number) {
         this._desconto = desconto;
+    }
+
+    total(): number {
+        return this.consumidos
+        .reduce((previousValue, item) => {
+            const sum = previousValue + item.preco;
+            return sum;
+        }, 0);
+    }
+
+    descontado(): number {
+        return this.total() * (1 - this.desconto)
     }
 }
 
