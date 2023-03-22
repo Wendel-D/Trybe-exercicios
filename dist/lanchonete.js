@@ -13,6 +13,7 @@ class Cliente {
 }
 class Pedido {
     constructor(cliente, consumidos, pagamento) {
+        this._consumidos = [];
         this._desconto = 0;
         this._cliente = cliente;
         this._consumidos = consumidos;
@@ -45,6 +46,16 @@ class Pedido {
     }
     set desconto(desconto) {
         this._desconto = desconto;
+    }
+    total() {
+        return this.consumidos
+            .reduce((previousValue, item) => {
+            const sum = previousValue + item.preco;
+            return sum;
+        }, 0);
+    }
+    descontado() {
+        return this.total() * (1 - this.desconto);
     }
 }
 class Item {
